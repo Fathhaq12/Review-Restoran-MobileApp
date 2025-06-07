@@ -43,13 +43,12 @@ class Restaurant {
     };
   }
 
-  // Helper getters for compatibility
+  
   int get restaurantId => id;
-  String get description => category; // Use category as description fallback
+  String get description => category; 
   String? get address => location;
   String? get imageUrl => image;
-  String get cuisineType => category; // Add this for compatibility
-  double get rating => 4.5; // Default rating since backend doesn't provide it
-  int get reviewCount => 0; // Default review count
-  String? get phoneNumber => null; // Not available in backend model
+  String get cuisineType => category; 
+  double get rating => 4.5; 
+  int get reviewCount => 0; 
 }
